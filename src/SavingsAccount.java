@@ -1,4 +1,13 @@
 public class SavingsAccount extends Account{
-//ContaPoupanca extends classe Conta
-   
+    
+    public SavingsAccount(Client client) {
+        super(client);
+    }
+
+    //ContaPoupanca extends classe Conta
+    @Override
+    public void printExtract() {
+        System.out.println("\n=== Savings Account Extract: ===\n"); 
+        super.imprimirInfos(); 
+    }   
 }
